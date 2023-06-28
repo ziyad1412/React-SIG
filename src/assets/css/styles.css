@@ -136,8 +136,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: #fff;
   /* background-color: #116f44;
   border-color: #116f44; */
-  background-color: #1C4D8C;
-  border-color: #1C4D8C;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 
 .btn-success:hover {
