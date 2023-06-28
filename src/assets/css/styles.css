@@ -3,7 +3,7 @@
 
 :root {
   --main-color: #1C4D8C;
-  --second-color: #B4CBD9;
+  --second-color: #273357;
 }
 
 body {
@@ -113,13 +113,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .border-top-success {
   /* border-top: 3px solid #198754!important; */
-  border-top: 3px solid #8269e0 !important;
+  border-top: 3px solid var(--main-color) !important;
 }
 
 .bg-light {
   /* background: #198754!important;
   border-top: 5px solid #ffb93a; */
-  background-color: #8269e0 !important;
+  background-color: var(--main-color) !important;
   border-top: 5px solid #b0b6da;
   color: white;
 }
@@ -177,16 +177,16 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: #fff;
   /* background-color: #116f44;
   border-color: #116f44; */
-  background-color: #6953bd;
-  border-color: #6953bd;
+  background-color: var(--second-color);
+  border-color: var(--second-color);
 }
 
 .btn-success-dark:hover {
   color: #fff;
   /* background-color: #116f44;
   border-color: #116f44; */
-  background-color: #6953bd;
-  border-color: #6953bd;
+  background-color: var(--second-color);
+  border-color: var(--second-color);
 }
 
 .ql-editor {
@@ -225,7 +225,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .navbar-custom {
   /* background-color: #198754;
   border-top: 5px solid #ffb93a; */
-  background-color: #8269e0;
+  background-color: var(--main-color);
   border-top: 5px solid #b0b6da;
 }
 
@@ -244,7 +244,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .dropdown-item:hover {
   color: white;
   /* background-color: #198754; */
-  background-color: #8269e0;
+  background-color: var(--main-color);
   border-radius: 5px;
 }
 
@@ -311,18 +311,18 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .image-gallery-icon {
   /* color: #689f38; */
-  color: #8269e0;
+  color: var(--main-color);
 }
 
 .image-gallery-icon:hover {
   /* color: #689f38; */
-  color: #8269e0;
+  color: var(--main-color);
   transition: none !important;
 }
 
 .icon-info-green {
   /* background-color: #689f38; */
-  background-color: #8269e0;
+  background-color: var(--main-color);
   border-radius: 35px;
   box-shadow: 0 3px 6px 0 rgb(4 172 233 / 20%);
   width: 45px !important;
