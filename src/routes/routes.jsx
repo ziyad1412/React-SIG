@@ -14,6 +14,9 @@ import PrivateRoute from "./PrivateRoutes";
 //import view admin Dashboard
 import Dashboard from '../pages/admin/dashboard/Index.jsx';
 
+//import view admin categories Index
+import CategoriesIndex from '../pages/admin/categories/Index.jsx';
+
 function RoutesIndex() {
     return (
         <Routes>
@@ -27,6 +30,16 @@ function RoutesIndex() {
                 element={
                         <PrivateRoute>
                             <Dashboard />
+                        </PrivateRoute>
+                }
+            />
+
+            {/* private route "/admin/categories" */}
+            <Route
+                path="/admin/categories"
+                element={
+                        <PrivateRoute>
+                            <CategoriesIndex />
                         </PrivateRoute>
                 }
             />
