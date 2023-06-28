@@ -170,7 +170,8 @@ function UsersIndex() {
                                                 <td>{user.name}</td>
                                                 <td>{user.email}</td>
                                                 <td className="text-center">
-                                                    <button onClick={() => deleteUser(user.id)} className="btn btn-sm btn-danger"><i className="fa fa-trash"></i></button>
+                                                <Link to={`/admin/users/edit/${user.id}`} className="btn btn-sm btn-primary me-2"><i className="fa fa-pencil-alt"></i></Link>
+                                                <button onClick={() => deleteUser(user.id)} className="btn btn-sm btn-danger"><i className="fa fa-trash"></i></button>
                                                 </td>
                                             </tr>
                                         ))}
