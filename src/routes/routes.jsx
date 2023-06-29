@@ -69,6 +69,9 @@ import WebPlaceDirection from '../pages/web/places/Direction.jsx';
 //import view web maps
 import WebMapsIndex from "../pages/web/maps/Index.jsx";
 
+//import view web search
+import WebSearch from '../pages/web/search/Index.jsx';
+
 function RoutesIndex() {
     return (
         <Routes>
@@ -213,6 +216,10 @@ function RoutesIndex() {
 
             {/* route "/maps" */}
             <Route path="/maps" element={<WebMapsIndex />} />
+
+            {/* route "/search" */}
+            <Route path="/search" element={<WebSearch />} />
+
         </Routes>
     )
 }
