@@ -58,7 +58,10 @@ import Home from '../pages/web/home/Index.jsx';
 import WebCategoryShow from '../pages/web/categories/Show.jsx';
 
 //import view web place Index
-import WebPlacesIndex from '../pages/web/places/Index.jsx';
+import WebPlacesIndex from "../pages/web/places/Index.jsx";
+
+//import view web place Show
+import WebPlaceShow from '../pages/web/places/Show.jsx';
 
 function RoutesIndex() {
     return (
@@ -195,6 +198,9 @@ function RoutesIndex() {
 
             {/* route "/places" */}
             <Route path="/places" element={<WebPlacesIndex />} />
+
+            {/* route "/places/:slug" */}
+            <Route path="/places/:slug" element={<WebPlaceShow />} />
 
         </Routes>
     )
