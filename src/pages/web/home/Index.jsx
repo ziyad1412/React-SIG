@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
 
     //title page
-    document.title = "TRAVEL GIS - Website Wisata Berbasis GIS (Geographic Information System)";
+    document.title = "SIG Kota Depok - Website Layanan Kesehatan Berbasis GIS (Geographic Information System)";
     
     //navigate
     const navigate = useNavigate();
@@ -69,13 +69,13 @@ function Home() {
                   <div className="card border-0 rounded shadow-sm">
                     <div className="card-body">
                       <h5>
-                        <i className="fa fa-search"></i> FIND YOUR FAVORITE PLACE
+                        <i className="fa fa-search"></i> CARI LAYANAN KESEHATAN
                       </h5>
                       <p>
-                        Find your favorite place to vacation with your family!
+                        Temukan layanan kesehatan untuk Anda dan keluarga
                       </p>
                       <hr />
-                      <input type="text" className="form-control" value={keyword} onChange={(e) => setKeyword(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && searchHandler()} placeholder="find your destination here..." />
+                      <input type="text" className="form-control" value={keyword} onChange={(e) => setKeyword(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && searchHandler()} placeholder="cari layanan kesehatan disini..." />
                     </div>
                   </div>
                 </div>

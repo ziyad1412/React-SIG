@@ -5,13 +5,9 @@ function WebFooter() {
 
     return(
         <React.Fragment>
-            <footer>
-                <div className="footer_top">
-                    <div className="footer_bg">
-                        <div className="footer_bg_one"></div>
-                        <div className="footer_bg_two"></div>
-                    </div>
-                </div>
+            <footer className='footer_now'>
+                    <p>Sistem Informasi Geografis Layanan Kesehatan Kota Depok</p>
+                    <p>Copyright © 2023 SIG Depok</p>
             </footer>
         </React.Fragment>
     )

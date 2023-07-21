@@ -101,11 +101,11 @@ function WebHeader() {
         <React.Fragment>
             <Navbar collapseOnSelect expand="lg" className="navbar-custom shadow-sm" fixed="top">
                 <Container>
-                    <Navbar.Brand as={Link} to="/" className="fw-bold text-white"><i className="fa fa-map-marked-alt"></i> TRAVEL GIS</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/" className="fw-bold text-white"><i className="fa fa-map-marked-alt"></i> SIG DEPOK</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavDropdown title={<span><i className="fa fa-list-ul"></i> CATEGORIES</span> } id="collasible-nav-dropdown" className="fw-bold text-white">
+                        <NavDropdown title={<span><i className="fa fa-list-ul"></i> KATEGORI</span> } id="collasible-nav-dropdown" className="fw-bold text-white">
                         {
                             categories.map((category) => (
                                 <NavDropdown.Item as={Link} to={`/category/${category.slug}`} key={category.id}><img src={category.image} style={{ width: "35px" }} alt=""/> {category.name.toUpperCase()}</NavDropdown.Item>
@@ -140,7 +140,7 @@ function WebHeader() {
                 </Modal.Header>
                 <Modal.Body>
                     <div className="input-group mb-3">
-                        <input type="text" className="form-control" value={keyword} onChange={(e) => setKeyword(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && searchHandler()} placeholder="find your destination here..." />
+                        <input type="text" className="form-control" value={keyword} onChange={(e) => setKeyword(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && searchHandler()} placeholder="cari layanan kesehatan disini..." />
                         <button onClick={searchHandler} type="submit" className="btn btn-md btn-success"><i className="fa fa-search"></i> SEARCH</button>
                     </div>
                 </Modal.Body>

@@ -413,6 +413,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   width: 55px;
 }
 
+.footer_now {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 1rem 1rem 0.2rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 .footer_top {
   padding: 120px 0px 200px;
   position: relative;
