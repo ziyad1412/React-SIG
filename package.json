@@ -1,10 +1,13 @@
 {
   "name": "react-travel",
   "private": true,
+  "homepage": "https://ziyad1412.github.io/React-SIG",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
